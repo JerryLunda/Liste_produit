@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 
-const style = product.stocked ? undefined: {color: 'red'}
-
 export function ProductRow({product}) {
+  const style = product.stocked ? undefined: {color: 'red'}
   return (
     <tr>
       <td style={style}> {product.name}</td>
